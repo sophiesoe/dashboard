@@ -1,0 +1,94 @@
+* {
+    font-family: 'Dosis', sans-serif;
+}
+.aside {
+    width: 20rem;
+}
+.main {
+    width: 100%;
+}
+nav {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.card {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.progress {
+    height: 0.5rem;
+    background-color: var(--pdf-gray-100);
+    transition: 0.5s;
+}
+.progress.one:hover {
+    height: 0.8rem;
+    background-color: var(--pdf-rose-50);
+    cursor: pointer;
+}
+.progress.two:hover {
+    height: 0.8rem;
+    background-color: var(--pdf-blue-100);
+    cursor: pointer;
+}
+.progress.three:hover {
+    height: 0.8rem;
+    background-color: var(--pdf-violet-100);
+    cursor: pointer;
+}
+.list-group-item {
+    border-left:3px solid!important;
+    border-color: transparent!important;
+    --fa-flip-y: none;
+}
+.list-group-item.active {
+    background-color: transparent;
+    color: #94c1ff!important;
+    border-color: transparent;
+    border-left-color:#94c1ff!important;
+    --fa-animation-duration: 1.5s!important;
+    --fa-flip-y:1!important;
+}
+.list-group-item:hover {
+    background-color: transparent;
+    color: #94c1ff!important;
+    border-color: transparent;
+    border-left-color:#94c1ff!important;
+    --fa-animation-duration: 1.5s;
+    --fa-flip-y:1;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: 0.5s;
+}
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.card-icon {
+    width: 45px;
+    height: 45px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.line-chart {
+    height: 15rem;
+}
+.visitor-chart {
+    height: 16rem;
+}
+@media screen and (max-width: 768px) {
+    .aside{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        transition: 0.5s;
+        z-index: 1041;
+        height: 100vh;
+        background-color: #ffffff;
+    }
+    .aside.show {
+        left: 0;
+    }
+    .aside-body {
+        position: relative!important;
+    }
+}
